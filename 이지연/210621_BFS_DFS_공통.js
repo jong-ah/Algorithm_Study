@@ -7,7 +7,7 @@ function solution(n, computers) {
     // 각 컴퓨터(=vertex)는 0부터 n-1인 정수로 표현된다고 했으므로 0번컴퓨터부터 n-1번 컴퓨터까지를 순회한다.
     for(let computer = 0; computer < n; computer++) {
         if(!isVisited[computer]) { // 일단은 방문여부를 체크해서 방문하지 않았다면
-            bfs(computers, computer, isVisited) // 재귀함수를 통해서 순회하고
+            dfs(computers, computer, isVisited) // 재귀함수를 통해서 순회하고
             answer++ // 결과값을 1 증가시킨다. 
         }
     } 
@@ -16,8 +16,8 @@ function solution(n, computers) {
     return answer;
 }
 
-// 너비우선탐색을 하는 함수 bfs를 만들어 보자
-function bfs(computers, computer, isVisited) {
+// 깊이우선탐색을 하는 함수 dfs를 만들어 보자
+function dfs(computers, computer, isVisited) {
 
     // 먼저 방문을 시작하기 전에 방문했음을 체크하고 시작한다.
     isVisited[computer] = true
@@ -27,7 +27,7 @@ function bfs(computers, computer, isVisited) {
         // 만약 2차원 배열의 숫자가 1이고 방문하지 않았다면, 
         if(computers[computer][next] && !isVisited[next]) {
             // 재귀를 통해서 탐색을 한다. 
-            bfs(computers, next, isVisited)
+            dfs(computers, next, isVisited)
         }
     }
 }
@@ -71,6 +71,7 @@ function bfs(computers, computer, isVisited) {
 
 // 너비우선탐색(BFS)는 
     // 각 검색단계마다 검색 범위의 경계선 전체를 저장해야하기 때문에 정점이 수백만에 달하면 사용하기가 어려워진다. 
+    // BFS는 재귀적으로 동작하지 않는다. 
     // 너비우선탐색은 최단경로를 찾아준다는 점에서 최단길이를 보장해야할 때 많이 사용한다.(e.g. 미로찾기)
 
 

@@ -83,18 +83,18 @@ function connectedVertices(edges) {
     }
   }
   
-  // bfs 자체를 재귀로 탐색할 수 있음
-  function bfs (matrix, vertex, isVisited) {
+  // dfs 자체를 재귀로 탐색할 수 있음
+  function dfs (matrix, vertex, isVisited) {
     isVisited[vertex] = true
     for(let next=0; next<matrix.length; next++) {
       if(matrix[vertex][next] && !isVisited[next]) {
-        bfs(matrix, next, isVisited)
+        dfs(matrix, next, isVisited)
       }
     }
   }
   
 
-  
+
   //? 더 생각해볼 문제
   // dfs로 탐색하는 것도 구현해봐야함
   // 인접리스트를 만들어서 순회하는 방법도 구현해봐야함
