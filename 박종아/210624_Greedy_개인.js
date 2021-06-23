@@ -42,21 +42,29 @@ function solution(number, k) {
   for (let i = 0; i < number.length - k; i++) {
     // (정답에 계속 더해질) 가장 큰 수 선언한다.
     let max = '0';
+
     // 아래 for문으로 가장 큰수가 확정될 때마다 정답만큼 나올 때까지 for문을 돌린다.
+    // max 확정할때마다 k+1을 추가해서 범위를 늘린다.
     for (let j = idx; j <= k + i; j++) {
+      console.log('***범위********', number.slice(idx, k + i + 1));
+
       // 같은 큰 수를 제거하기 위해 max의 인덱스+1인 idx는 제외한다.
-      // 범위의 값을 하나씩 확인할때마다 k+1을 추가해서 범위를 늘린다.
       // 9가 가장 큰수이므로 바로 할당한다.
       if (number[j] === '9') {
         max = number[j];
         idx = j + 1;
         break;
-        // max의 큰수를 for문 안에서 돌아가며 찾는다.
-      } else if (max < number[j]) {
+      }
+
+      // max의 큰수를 for문 안에서 돌아가며 찾는다.
+      else if (max < number[j]) {
+        console.log('max', max, 'number[j]', number[j]);
         max = number[j];
         idx = j + 1;
       }
     }
+
+    console.log('최종 max', max);
     answer += max;
   }
   return answer;
@@ -65,4 +73,4 @@ function solution(number, k) {
 let number = '4177252841';
 let k = 4;
 let output = solution(number, k);
-console.log(output);
+console.log(output); // 775841
