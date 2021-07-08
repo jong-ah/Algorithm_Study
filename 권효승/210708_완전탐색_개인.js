@@ -7,7 +7,9 @@
 4. 중복된 값들은 제거하며 그 갯수 반환
 *******************/
 
-function isPrime(num, result) {
+let result = []
+
+function isPrime(num) {
 	if (num < 2) return false;
 	for (let i = 2; i <= Math.sqrt(num); i++)
 		if (num % i === 0)
@@ -16,23 +18,21 @@ function isPrime(num, result) {
 }
 
 
-function powerSet(arr, tmp, result) {
+function powerSet (arr, tmp) {
 	if (arr.length > 0) {
 		for (let i = 0; i < arr.length; i++) {
 			let spliceArr = [...arr];
 			spliceArr.splice(i, 1);
-			powerSet(spliceArr, tmp + arr[i], result);
+			powerSet(spliceArr, tmp + arr[i]); 
 		}
 	}
 	
 	if (tmp.length > 0)
-		isPrime(Number(tmp), result);
+		isPrime(Number(tmp));
 };
 
 function solution(numbers) {
-	let result = []
-	
-	powerSet(numbers.split(''), '', result);
+	powerSet(numbers.split(''), '');
 	return [...new Set(result)].length;
 }
 
