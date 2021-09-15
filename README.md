@@ -11,7 +11,7 @@
 |권효승|[hyoogu](https://github.com/hyoogu "Github Link")|[vel_ogu](https://velog.io/@idhyo0o "Blog Link")|
 |박종아|[jong-ah](https://github.com/jong-ah "Github Link")|[jongah tech blog](https://medium.com/jongah-tech-blog "Blog Link")|
 |이지연|[ezyeon07](https://github.com/ezyeon07 "Github Link")|  |
-|전지호|[wjswlgh96](https://github.com/wjswlgh96 "Github Link")|[호지의 프로그래밍 공부](https://wjswlgh96.tistory.com "Blog Link")|
+|전지호|[wjswlgh96](https://github.com/wjswlgh96 "Github Link")|[wjswlgh96.log](https://velog.io/@wjswlgh96 "Blog Link")|
 
 <br/>
 
