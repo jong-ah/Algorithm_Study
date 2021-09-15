@@ -24,7 +24,7 @@
 * 참고 레퍼런스
 - [최단 경로(Shortest Path) 2 - 벨만-포드 알고리즘(Bellman-Ford Algorithm)](https://www.apexcel.blog/algorithm/graph/shortest-path/bellman-ford/)
 - [벨만-포드 알고리즘](https://projooni.tistory.com/entry/%EB%B2%A8%EB%A7%8C%ED%8F%AC%EB%93%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
-- [다익스트라 알고리](https://www.zerocho.com/category/Algorithm/post/584bd46f580277001862f1af)
+- [다익스트라 알고리즘](https://www.zerocho.com/category/Algorithm/post/584bd46f580277001862f1af)
 ***********************************************************************/
 
 // TODO 풀이의 흐름
