@@ -1,6 +1,6 @@
 # Algorithm_Study
 
-[Study Notion (문제 공유)](https://www.notion.so/fe551f563d3b485b820e5be3fe1e6eb4, "Notion Link") 
+[Study Notion (문제 공유)](https://www.notion.so/fe551f563d3b485b820e5be3fe1e6eb4 "Notion Link") 
 
 <br/>
 
