@@ -38,3 +38,7 @@ function solution(s) {
 
   return arr.join(" ");
 }
+
+//! 입출력 예시
+console.log(solution("3people unFollowed me")); //* 결과: "3people Unfollowed Me"
+console.log(solution("for the last week")); //* 결과: "For The Last Week"
