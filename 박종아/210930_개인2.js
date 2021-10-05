@@ -1,4 +1,4 @@
-'use strict';
+'use strict'; 
 
 // * https://urclass.codestates.com/codeproblem/efe1080f-813e-4e80-9376-3909da16d4f8
 
