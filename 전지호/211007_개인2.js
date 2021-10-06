@@ -33,3 +33,7 @@ const largestProductOfThree = function (arr) {
 
   return Math.max(a, b);
 };
+
+//! 입출력예시
+console.log(largestProductOfThree([2, 1, 3, 7])); //* 결과: 42
+console.log(largestProductOfThree([-1, 2, -5, 7])); //* 결과: 35
