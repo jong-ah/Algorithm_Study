@@ -48,5 +48,7 @@ function solution(n) {
   return result;
 }
 
-console.log(solution([93, 30, 55], [1, 30, 5])); //* 결과: [2, 1]
-console.log(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1])); //* 결과: [1, 3, 2]
+console.log(solution(1)); //* 결과: 1
+console.log(solution(2)); //* 결과: 2
+console.log(solution(3)); //* 결과: 4
+console.log(solution(4)); //* 결과: 11
