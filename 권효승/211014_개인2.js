@@ -1,5 +1,7 @@
 // https://programmers.co.kr/learn/courses/30/lessons/72412
 
+// 효율성 문제로 탈락.. 조합 + 이분탐색으로 풀어야했던 문제
+
 function countRank(infoArr, query, answer) {
   let count = 0;
   infoArr.forEach((v) => {
